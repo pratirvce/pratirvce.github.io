@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pratibha Revankar — Lead Software Engineer at Intel Corporation." />
+  <title>Pratibha Revankar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a222c;
+      --text: #e8edf2;
+      --muted: #8b9aab;
+      --accent: #3dd6c3;
+      --accent-dim: rgba(61, 214, 195, 0.15);
+      --border: rgba(255, 255, 255, 0.08);
+      --radius: 12px;
+      --font-sans: "DM Sans", system-ui, sans-serif;
+      --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f4f0;
+        --surface: #ffffff;
+        --text: #1a1f26;
+        --muted: #5c6673;
+        --accent: #0d9488;
+        --accent-dim: rgba(13, 148, 136, 0.12);
+        --border: rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-sans);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 50% -20%, var(--accent-dim), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 0%, rgba(100, 120, 200, 0.08), transparent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 0 0.75rem;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 1.125rem;
+      margin: 0;
+      max-width: 52ch;
+    }
+
+    section {
+      margin-bottom: 2.25rem;
+    }
+
+    h2 {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.35rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .links li {
+      margin: 0;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.35rem 0;
+    }
+
+    .links a::after {
+      content: "→";
+      font-size: 0.85em;
+      opacity: 0.7;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Hello</p>
+      <h1>Pratibha Revankar</h1>
+      <p class="tagline">
+        Lead Software Engineer at Intel Corporation
+      </p>
+    </header>
+
+    <main>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <div class="card">
+          <p>
+            I’m a lead software engineer at Intel, focused on building reliable systems and leading
+            technical direction. This page is my home on the web — reach out via email or the links below.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="links-heading">
+        <h2 id="links-heading">Links</h2>
+        <ul class="links">
+          <li><a href="https://github.com/pratirvce" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/pratirvce/" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:pratirvce@gmail.com">Email</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> · Hosted on <a href="https://pages.github.com/">GitHub Pages</a></p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
